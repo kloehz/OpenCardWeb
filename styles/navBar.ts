@@ -14,7 +14,7 @@ export default css`
     }
 
     .link{
-        color: #50504F;
+        color: #747474;
         font-weight: 40;
         padding: 13px 23px;
         text-decoration: none;

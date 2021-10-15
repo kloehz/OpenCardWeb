@@ -1,4 +1,4 @@
-import testStyle from "../styles/navBar";
+import testStyle from "../../../styles/navBar";
 import Link from 'next/link'
 import Image from 'next/image';
 
@@ -14,10 +14,12 @@ const NavBar = () => {
             alt=""
             />
         </div>
+
+        <label htmlFor='menuMedia'></label>
         <Link href="/">
             <a className='link'>Inicio</a>
         </Link>
-        <Link href="about-us">
+        <Link href="/about-us">
             <a className='link'>Empresas</a>
         </Link>
         <Link href="/">
