@@ -1,37 +1,35 @@
-import { Link, useTheme} from '@nextui-org/react';
-
+import testStyle from "../styles/navBar";
+import Link from 'next/link'
+import Image from 'next/image';
 
 const NavBar = () => {
 
-    const { palette, breakpoints } = useTheme();
-
     return (
-        <>
-            <div className="navbar-container">
-
-                <Link underline color="success">Inicio</Link>
-                <Link underline color="success">Empresas</Link>
-                <Link underline color="success">Personas</Link>
-                <Link underline color="success">Contacto</Link>
-            </div>
-            <style jsx>
-            {`
-                .navbar-container {
-                    display: flex;
-                    height: 7vh;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    background-color: rgba(255, 255, 255, 0.7);
-                }
-
-                @media (max-width: ${breakpoints.xs.max}){
-                    .navbar-container {
-                        background-color: red;
-                    }
-                }
-            `}
-            </style>
-        </>
+    <div className="navbar-container">
+        <div className='imagenOpen' style={{width:'25vw', display: 'flex', justifyContent: 'flex-start'}}>
+            <Image
+            src="/images/icon-logo.png"
+            height={65}
+            width={250}
+            alt=""
+            />
+        </div>
+        <Link href="/">
+            <a className='link'>Inicio</a>
+        </Link>
+        <Link href="about-us">
+            <a className='link'>Empresas</a>
+        </Link>
+        <Link href="/">
+            <a className='link'>Personas</a>
+        </Link>
+        <Link href="/">
+            <a className='link'>Contacto</a>
+        </Link>
+        <style jsx>
+            { testStyle }
+        </style>
+        </div>
     )
 }
 
