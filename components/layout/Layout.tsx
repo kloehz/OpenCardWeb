@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import NavBar from "./navbar/NavBar"
+import NavBar from "../navbar/NavBar"
 
 interface ILayoutProps {
     children: ReactNode
