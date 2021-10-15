@@ -1,6 +1,7 @@
 import testStyle from "../../../styles/navBar";
 import Link from 'next/link'
 import Image from 'next/image';
+import { Button } from '@nextui-org/react';
 
 const NavBar = () => {
 
