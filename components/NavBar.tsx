@@ -6,7 +6,7 @@ const NavBar = () => {
 
     return (
     <div className="navbar-container">
-        <div className='imagenOpen' style={{width:'25vw', display: 'flex', justifyContent: 'flex-start'}}>
+        <div className='imageLogo'>
             <Image
             src="/images/icon-logo.png"
             height={65}

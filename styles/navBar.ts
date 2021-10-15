@@ -3,32 +3,35 @@ import { primaryColor } from "./theme";
 
 export default css`
     .navbar-container {
-        display: flex;
-        height: 9vh;
-        justify-content: space-evenly;
         align-items: center;
         background-color: #E3F0A859;
-        font-weight: 300;
-        font-size: 23px;
         color: #636658;
-        margin:
-
+        display: flex;
+        font-size: 23px;
+        font-weight: 300;
+        height: 9vh;
+        justify-content: space-evenly;
     }
 
     .link{
         color: #50504F;
-        text-decoration: none;
         font-weight: 40;
         padding: 13px 23px;
-
+        text-decoration: none;
     }
 
     .link:hover{
-        color: #000000;
         background-color: #E3F0A8;
         border-radius: 6px;
-        width: auto;
+        color: #000000;
         transition: .3s;
+        width: auto;
+    }
+
+    .imageLogo {
+        display: flex;
+        justify-content: flex-start;
+        width: 25vw;
     }
 
     @media (max-width: 800px){
