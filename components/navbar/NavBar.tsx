@@ -1,8 +1,15 @@
 import testStyle from "../../styles/navBar";
 import Link from 'next/link'
 import Image from 'next/image';
+import { useState } from "react";
 
 const NavBar = () => {
+
+    const [isOpen, setisOpen] = useState(false);
+
+    const handleOpen = () => {
+        setisOpen((open) => !open)
+    }
 
     return (
     <div className="navbar-container">
@@ -15,7 +22,14 @@ const NavBar = () => {
             />
         </div>
 
-        <label htmlFor='menuMedia'></label>
+        <div className={`menu-media ${isOpen ? 'open' : ''}`} onClick={handleOpen}>
+            <button className="button">
+                <span className={`top-line ${isOpen ? 'open' : ''}`}></span>
+                <span className={`center-line ${isOpen ? 'open' : ''}`}></span>
+                <span className={`botton-line ${isOpen ? 'open' : ''}`}></span>
+            </button>
+        </div>
+
         <Link href="/">
             <a className='link'>Inicio</a>
         </Link>
@@ -28,11 +42,16 @@ const NavBar = () => {
         <Link href="/">
             <a className='link'>Contacto</a>
         </Link>
+
+
         <style jsx>
             { testStyle }
         </style>
         </div>
+        
+
     )
+
 }
 
 export default NavBar;
