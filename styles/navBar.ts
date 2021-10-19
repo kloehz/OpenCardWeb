@@ -1,7 +1,7 @@
 import css from 'styled-jsx/css';
 import { colors } from "./theme";
 
-export default css`
+const styles = css`
     .navbar-container {
         align-items: center;
         background-color: ${colors.primary};
@@ -22,79 +22,44 @@ export default css`
         margin: 5px;
     }
 
-    .menu-media{
+    .menu-media {
         display: none;
+        flex-direction: column;
     }
 
-    .menu-media .button{
-        background: #E3F0A8;
-        border: 0px;
-        border-radius: 8px;
-        cursor: pointer;
-        width: 50px;
-        height: 60px;
-
-    }
-    .menu-media .button span{
-        border-radius: 15px;
-        background:  #747474;
-        display: block;
-        width: 70%;
-        margin: 7px auto;
-        height: 3px;
-
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
+    .menu-media span {
+        background-color: gray;
+        width: 32px;
+        height: 4px;
+        margin: 4px;
+        border-radius: 2px;
+        transition:all ease 0.5s;
     }
 
-    .menu-media .open .top-line {
-        animation-name: top-line-animation;
-
+    .open:nth-child(1) {
+      transform: rotate(45deg) translateY(8px) translateX(8px);
     }
 
-    .menu-media .open .center-line {
-        animation-name: center-line-animation;
-        background-color: red;
+    .open:nth-child(2) {
+      opacity: 0;
     }
 
-    .menu-media .open .bottom-line {
-        animation-name: bottom-line-animation;
-
-    }
-
-    .menu-media .top-line {
-        animation-name: top-line-animation;
-
+    .open:nth-child(3) {
+      transform: rotate(-45deg) translateY(-8px) translateX(8px);
     }
 
 
-    .menu-media .bottom-line {
-        animation-name: bottom-line-animation;
-
+    .close:nth-child(1) {
+      transform: rotate(0) translateY(0);
     }
 
-    @keyframes top-line-animation{
-        50%, 100%{
-            margin: 0 auto;
-            transform: translateY(2px) rotate(-45deg);
-        }
+    .close:nth-child(2) {
+      opacity: 1;
     }
 
-    @keyframes bottom-line-animation{
-        50%, 100%{
-            margin: 0 auto;
-            transform: translateY(2px) rotate(45deg);
-        }
+    .close:nth-child(3) {
+      transform: rotate(0) translateY(0);
     }
-
-    @keyframes center-line-animation{
-        20%, 100%{
-            margin: 0 auto;
-            opacity: 0;
-            width: 0px;
-        }
-    }
-
 
     .link{
         color: #747474;
@@ -133,3 +98,5 @@ export default css`
 
     }
 `;
+
+export default styles;

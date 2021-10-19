@@ -5,11 +5,7 @@ import { useState } from "react";
 
 const NavBar = () => {
 
-    const [isOpen, setisOpen] = useState(false);
-
-    const handleOpen = () => {
-        setisOpen((open) => !open)
-    }
+    const [isOpen, setisOpen] = useState('closed');
 
     return (
     <div className="navbar-container">
@@ -22,12 +18,10 @@ const NavBar = () => {
             />
         </div>
 
-        <div className={`menu-media ${isOpen ? 'open' : ''}`} onClick={handleOpen}>
-            <button className="button">
-                <span className={`top-line ${isOpen ? 'open' : ''}`}></span>
-                <span className={`center-line ${isOpen ? 'open' : ''}`}></span>
-                <span className={`botton-line ${isOpen ? 'open' : ''}`}></span>
-            </button>
+        <div className="menu-media" onClick={() => setisOpen(isOpen === 'open' ? 'close' : 'open')}>
+            <span className={isOpen}></span>
+            <span className={isOpen}></span>
+            <span className={isOpen}></span>
         </div>
 
         <Link href="/">
