@@ -1,21 +1,22 @@
 import React from 'react';
-import styles from "../styles/dividerStyles";
+import { colors } from '../styles/theme';
 
 interface IMarginSide {
     marginSide: string
 }
 
 export const Divider = ({marginSide}: IMarginSide) => {
-
-    const setStyle = styles(marginSide);
-
     return (
         <>
             <div className="divider"></div>
-            <div className="dividerTwo"></div>
-            <style jsx>
-                {setStyle}
-            </style>
+            <style jsx>{`
+                .divider {
+                    width: 50%;
+                    padding: 7px;
+                    background: ${colors.secondary};
+                    margin-${marginSide}: auto;
+                }
+            `}</style>
         </>
     )
 }

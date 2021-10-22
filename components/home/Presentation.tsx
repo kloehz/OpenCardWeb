@@ -16,7 +16,7 @@ export const Presentation = () => {
                 />
             </div>
             <Divider marginSide={'left'}/>
-            
+            <Divider marginSide={'rigth'}/>
             <style jsx>
                 { styles }
             </style>
