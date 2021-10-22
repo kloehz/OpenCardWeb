@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const aboutUs = () => {
-    return (
-        <div>
+  return (
+    <div>
             test id
-        </div>
-    )
-}
+    </div>
+  );
+};
 
 export default aboutUs;

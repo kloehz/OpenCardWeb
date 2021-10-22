@@ -9,6 +9,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <CssBaseline />
       <Component {...pageProps} />
     </Layout>
-  )
+  );
 }
-export default MyApp
+export default MyApp;

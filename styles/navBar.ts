@@ -1,5 +1,5 @@
 import css from 'styled-jsx/css';
-import { colors } from "./theme";
+import { colors } from './theme';
 
 const styles = css`
     .navbar-container {
