@@ -9,7 +9,10 @@ export const Layout = ({ children }: ILayoutProps) => {
     return (
         <>
             <NavBar />
-            {children}
+            {/* TODO: Pasar esto a un archivo css */}
+            <div style={{marginTop: '90px'}}>
+                { children }
+            </div>
         </>
     )
 }

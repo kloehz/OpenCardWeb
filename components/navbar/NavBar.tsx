@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const NavBar = () => {
 
-    const [isOpen, setisOpen] = useState('closed');
+    const [isOpen, setisOpen] = useState(true);
 
     return (
     <div className="navbar-container">
@@ -18,25 +18,28 @@ const NavBar = () => {
             />
         </div>
 
-        <div className="menu-media" onClick={() => setisOpen(isOpen === 'open' ? 'close' : 'open')}>
-            <span className={isOpen}></span>
-            <span className={isOpen}></span>
-            <span className={isOpen}></span>
+        <div className="menu-media" onClick={() => setisOpen((open) => !open)}>
+            <span className={isOpen === true ? 'close' : 'open'}></span>
+            <span className={isOpen === true ? 'close' : 'open'}></span>
+            <span className={isOpen === true ? 'close' : 'open'}></span>
         </div>
-
-        <Link href="/">
-            <a className='link'>Inicio</a>
-        </Link>
-        <Link href="/about-us">
-            <a className='link'>Empresas</a>
-        </Link>
-        <Link href="/">
-            <a className='link'>Personas</a>
-        </Link>
-        <Link href="/">
-            <a className='link'>Contacto</a>
-        </Link>
-
+        
+        <div className={
+            `link-container ${isOpen !== true ? 'show': ''}`
+        }>
+            <Link href="/">
+                <a className='link' onClick={() => setisOpen((open)=> !open)}>Inicio</a>
+            </Link>
+            <Link href="/about-us">
+                <a className='link'onClick={() => setisOpen((open)=> !open)} >Empresas</a>
+            </Link>
+            <Link href="/">
+                <a className='link' onClick={() => setisOpen((open)=> !open)} >Personas</a>
+            </Link>
+            <Link href="/">
+                <a className='link'onClick={() => setisOpen((open)=> !open)} >Contacto</a>
+            </Link>
+        </div>
 
         <style jsx>
             { testStyle }
