@@ -1,4 +1,4 @@
-import testStyle from '../../styles/navBar';
+import testStyle from '../../styles/navBarStyles';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';

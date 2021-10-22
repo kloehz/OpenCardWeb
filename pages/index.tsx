@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
+import { Presentation } from '../components/home/Presentation';
 
 const Home: NextPage = () => {
   return (
@@ -11,14 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Pasar todo esto a un componente Home */}
-      <div style={{width:'100vw', display: 'flex', justifyContent: 'center'}}>
-        <Image
-          src="/images/icon-logo.png"
-          height={75}
-          width={300}
-          alt=""
-        />
-      </div>
+      <Presentation />
     </>
   );
 };
