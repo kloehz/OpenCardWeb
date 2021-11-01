@@ -6,17 +6,21 @@ interface IMarginSide {
 }
 
 export const Divider = ({marginSide}: IMarginSide) => {
-    return (
-        <>
-            <div className="divider"></div>
-            <style jsx>{`
-                .divider {
-                    width: 50%;
-                    padding: 7px;
-                    background: ${colors.secondary};
-                    margin-${marginSide}: auto;
-                }
-            `}</style>
-        </>
-    )
-}
+  return (
+    <>
+      <div className="divider"></div>
+      <style jsx>
+        {
+          `
+            .divider {
+                width: 50%;
+                padding: 7px;
+                background: ${colors.secondary};
+                margin-${marginSide}: auto;
+            }
+          `
+        }
+      </style>
+    </>
+  );
+};
