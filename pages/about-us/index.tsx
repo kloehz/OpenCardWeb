@@ -1,10 +1,15 @@
-import React from 'react';
+import dynamic from 'next/dynamic';
+
 
 const aboutUs = () => {
+  const MapComponent = dynamic(() => {
+    return import('../../components/map');
+  }, { ssr:false });
+
   return (
-    <div>
-            test id
-    </div>
+    <>
+      <MapComponent />
+    </>
   );
 };
 
