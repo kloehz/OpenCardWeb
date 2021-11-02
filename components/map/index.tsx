@@ -1,15 +1,6 @@
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
-
-function GetIcon() {
-  return L.icon({
-    iconUrl: '/images/map-icon.png',
-    iconSize: [30, 30],
-    iconAnchor: [22, 94],
-    popupAnchor: [-3, -76],
-  });
-}
+import { MapContainer, TileLayer } from 'react-leaflet';
+import { MarkerComponent } from './marker';
+import { cords } from './cords';
 
 const Map = () => {
   return (
@@ -18,11 +9,11 @@ const Map = () => {
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[-33.8931985, -60.5774754]} icon={GetIcon()}>
-        <Popup>
-          OpenCard.
-        </Popup>
-      </Marker>
+      {
+        cords.map(({lat, long, name}, i) => {
+          return <MarkerComponent lat={lat} long={long} name={name} key={i}/>;
+        })
+      }
     </MapContainer>
   );
 };
