@@ -82,7 +82,7 @@ const styles = css`
       width: auto;
   }
 
-  @media (max-width: 900px){
+  @media (max-width: 800px){
     .navbar-container {
       background-color: ${colors.primary};
       justify-content: space-between;
