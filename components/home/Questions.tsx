@@ -5,8 +5,8 @@ export const Questions = () => {
     <>
       <div className='div-container'>
         <div className='titles-container'>
-          <h4 className='have-doubts'>¿Tienes dudas?</h4>
-          <h3 className='frequent-questions'>Conoce las preguntas frecuentes</h3>
+          <h3 className='have-doubts'>¿Tienes dudas?</h3>
+          <h2 className='frequent-questions'>Conoce las preguntas<br/>frecuentes</h2>
         </div>
         <div className='questions'>
           <div className='question-container'>

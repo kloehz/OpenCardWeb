@@ -39,4 +39,11 @@ export const styles = css`
         50%; { -webkit-filter: grayscale(50%);}
         100% { -webkit-filter: grayscale(0%);}
     }
+
+    @media (max-width: 800px) {
+        .image-next {
+            height: 80px;
+            width: 80px;
+        }
+    }
 `;

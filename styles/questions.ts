@@ -21,11 +21,13 @@ export const styles = css`
     .have-doubts {
         color: ${colors.secondary};
         font-weight: 600;
+        font-size: 1.8rem;
     }
     
     .frequent-questions {
         text-align: center;
         font-weight: 500;
+        font-size: 2.2rem;
     }
     
     .questions {        
@@ -33,15 +35,18 @@ export const styles = css`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100vw;
+        width: 50vw;
     }
 
     .questions h5 {
+        margin: 0;
         width: 300px;
+        font-size: 1.2rem;
     }
 
     .question-container {
         display: flex;
+        align-items: center;
     }
 
     .arrow-img {
@@ -58,9 +63,8 @@ export const styles = css`
             width: unset;
         }
 
-        .questions-container {
+        .question-container {
             margin-top: 20px;
-            width: unset;
         }
     }
 `;

@@ -36,6 +36,7 @@ export const styles = css `
     .buy-it {
         margin: 0;
         font-size: 1.5rem;
+        text-align: center;
     }
 
     .image-container {
@@ -43,15 +44,37 @@ export const styles = css `
         min-width: 400px;
     }
 
+    @media (max-width: 350px) {
+        .image-container {
+            min-width: 250px !important;
+        }
+
+        .title {
+            font-size: .7rem !important;
+        }
+
+        .buy-with-card {
+            font-size: .8rem !important;
+        }
+
+        .buy-it {
+            font-size: .8rem !important;
+        }
+
+        .credit-card {
+            margin-left: -120px !important;
+        }
+    }
+
     @media (max-width: 800px) {
         .credit-card {
-            height: 120px;
-            width: 55vw;
+            height: 140px;
+            max-width: 40vw;
             margin-left: -100px;
         }
 
         .image-container {
-            min-width: 250px;
+            min-width: 320px;
         }
 
         .buy-with-card {
