@@ -14,7 +14,7 @@ export const OurClients = () => {
   return (
     <>
       <div className="div-container">
-        <h1>Nuestros clientes</h1>
+        <h1 style={{textAlign: 'center'}}>Nuestros clientes</h1>
         <h5>Ellos confian en nosotros</h5>
         <div className="images-container">
           {

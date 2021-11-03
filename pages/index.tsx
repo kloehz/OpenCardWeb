@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { GiftWomen } from '../components/home/GiftWomen';
 import { OurClients } from '../components/home/OurClients';
 import { Presentation } from '../components/home/Presentation';
+import { Questions } from '../components/home/Questions';
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <Presentation />
       <OurClients />
       <GiftWomen />
+      <Questions />
     </>
   );
 };
