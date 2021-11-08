@@ -1,4 +1,4 @@
-import { styles } from '../../styles/questions';
+import { styles } from '../../styles/home/questions';
 
 export const Questions = () => {
   return (
@@ -11,19 +11,27 @@ export const Questions = () => {
         <div className='questions'>
           <div className='question-container'>
             <h5>¿Cuanto dinero puedo solicitar?</h5>
-            <img className='arrow-img' src='/images/home/arrow.svg'/>
+            <div style={{width: '20px'}}>
+              <img className='arrow-img' src='/images/home/arrow.svg'/>
+            </div>
           </div>
           <div className='question-container'>
             <h5>¿Cuanto tengo que pagar por cuota?</h5>
-            <img className='arrow-img' src='/images/home/arrow.svg'/>
+            <div style={{width: '20px'}}>
+              <img className='arrow-img' src='/images/home/arrow.svg'/>
+            </div>
           </div>
           <div className='question-container'>
             <h5>¿Como pago el prestamo?</h5>
-            <img className='arrow-img' src='/images/home/arrow.svg'/>
+            <div style={{width: '20px'}}>
+              <img className='arrow-img' src='/images/home/arrow.svg'/>
+            </div>
           </div>
           <div className='question-container'>
             <h5>¿Que pasa si no termino el proceso?</h5>
-            <img className='arrow-img' src='/images/home/arrow.svg'/>
+            <div style={{width: '20px'}}>
+              <img className='arrow-img' src='/images/home/arrow.svg'/>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import css from 'styled-jsx/css';
-import { colors } from './theme';
+import { colors } from '../theme';
 
 export const styles = css`
     .div-container {
@@ -47,10 +47,22 @@ export const styles = css`
     .question-container {
         display: flex;
         align-items: center;
+        cursor: pointer;
+    }
+
+    .question-container h5 {
+        padding: 5px 0;
     }
 
     .arrow-img {
         height: 25px;
+        margin-left: 0px;
+        transition: .5s;
+    }
+
+    .question-container:hover .arrow-img {
+        margin-left: 5px;
+        transition: .5s;
     }
 
     @media (max-width: 800px) {

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { styles } from '../../styles/giftWomen';
+import { styles } from '../../styles/home/giftWomen';
 
 export const GiftWomen = () => {
   return (

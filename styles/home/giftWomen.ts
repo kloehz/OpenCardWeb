@@ -1,5 +1,5 @@
 import css from 'styled-jsx/css';
-import { colors } from './theme';
+import { colors } from '../theme';
 
 export const styles = css `
     .div-container {

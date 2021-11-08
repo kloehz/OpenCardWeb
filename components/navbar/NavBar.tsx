@@ -33,10 +33,10 @@ const NavBar = () => {
         <Link href="/about-us">
           <a className='link'onClick={() => setisOpen((open)=> !open)} >Empresas</a>
         </Link>
-        <Link href="/">
-          <a className='link' onClick={() => setisOpen((open)=> !open)} >Personas</a>
+        <Link href="/about-us">
+          <a className='link' onClick={() => setisOpen((open)=> !open)} >Nosotros</a>
         </Link>
-        <Link href="/">
+        <Link href="/contact">
           <a className='link'onClick={() => setisOpen((open)=> !open)} >Contacto</a>
         </Link>
       </div>

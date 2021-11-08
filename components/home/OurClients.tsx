@@ -1,5 +1,5 @@
 import React from 'react';
-import { styles } from '../../styles/ourClients';
+import { styles } from '../../styles/home/ourClients';
 import Image from 'next/image';
 import { Divider } from '../Divider';
 
