@@ -9,7 +9,7 @@ export const Avatar = () => {
           <h2>NUESTROS CLIENTES</h2>
           <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis consequuntur officiis, quia voluptate cupiditate doloremque non aliquid laboriosam corrupti nisi quod quibusdam repellendus esse. Sit officia delectus accusantium magnam corporis.</h3>
         </div>
-        <div className="avatar-container">
+        {/* <div className="avatar-container">
           <figure id="avatar-1">
             <Image
               src='/images/about-us/avatar-1.svg'
@@ -38,7 +38,7 @@ export const Avatar = () => {
               height='140'
             />
           </figure>
-        </div>
+        </div> */}
       </section>
       <style jsx>{styles}</style>
     </>
