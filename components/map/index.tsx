@@ -1,5 +1,5 @@
 import { MapContainer, TileLayer } from 'react-leaflet';
-import { MarkerComponent } from './Marker';
+import { MarkerComponent } from './marker';
 import { ICords } from '../../types/cords';
 
 interface IMap {
