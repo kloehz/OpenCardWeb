@@ -7,8 +7,6 @@ function GetIcon() {
   return L.icon({
     iconUrl: '/images/logo.png',
     iconSize: [30, 30],
-    iconAnchor: [22, 94],
-    popupAnchor: [-3, -76],
   });
 }
 
