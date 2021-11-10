@@ -12,3 +12,7 @@ body {
   radial-gradient(#DFE8B4 1.5px, transparent 1px);
   background-size: 50px 50px;
 }
+
+.leaflet-container {
+  border-radius: 10px !important;
+}
