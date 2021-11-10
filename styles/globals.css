@@ -16,3 +16,7 @@ body {
 .leaflet-container {
   border-radius: 10px !important;
 }
+
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+  position: sticky !important;
+}

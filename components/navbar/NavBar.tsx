@@ -2,10 +2,16 @@ import testStyle from '../../styles/navBarStyles';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 const NavBar = () => {
-
   const [isOpen, setisOpen] = useState(true);
+  const router = useRouter();
+
+  const handleClick = (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
+    e.preventDefault();
+    router.push('/');
+  };
 
   return (
     <div className="navbar-container">
@@ -15,6 +21,7 @@ const NavBar = () => {
           height={65}
           width={250}
           alt=""
+          onClick={(e) => handleClick(e)}
         />
       </div>
 

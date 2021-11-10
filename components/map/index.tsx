@@ -9,7 +9,7 @@ interface IMap {
 
 const Map = ({ childrens, zoom = 11 }: IMap) => {
   return (
-    <MapContainer center={[-33.8931985,-60.5774754]} zoom={zoom} scrollWheelZoom={false} style={{height: '100%', width: '100%', position: 'sticky'}}>
+    <MapContainer center={[-33.8931985,-60.5774754]} zoom={zoom} scrollWheelZoom={false} style={{height: '100%', width: '100%'}}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
