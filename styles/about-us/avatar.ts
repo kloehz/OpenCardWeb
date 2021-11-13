@@ -24,6 +24,10 @@ export const styles = css`
     flex-direction: column;
   }
 
+  .description-container h2 {
+    text-align: center;
+  }
+
   @media (max-width: 800px) {
     section {
       flex-direction: column;
