@@ -2,10 +2,12 @@ import React from 'react';
 import { styles } from '../../styles/home/ourClients';
 import Image from 'next/image';
 import { Divider } from '../Divider';
+import { isMobile } from 'react-device-detect';
 
 export const OurClients = () => {
 
   const images = [];
+  console.log(isMobile);
 
   for(let i = 1; i<=28; i++){
     images.push(`/images/our_clients/${i}.jpeg`);
