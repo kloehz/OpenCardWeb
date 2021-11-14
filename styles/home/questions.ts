@@ -77,5 +77,9 @@ export const styles = css`
         .question-container {
             margin-top: 20px;
         }
+
+        .questions {
+            width: unset;
+        }
     }
 `;

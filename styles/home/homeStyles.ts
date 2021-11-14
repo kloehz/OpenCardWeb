@@ -10,7 +10,7 @@ const styles = css`
 
     @media (max-width: 800px) {
         .image-open-card {
-            min-width: 320px;
+            min-width: 280px;
         }
     }
 `;

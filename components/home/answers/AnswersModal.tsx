@@ -85,6 +85,13 @@ export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: 
           width: 100%;
           text-align: center;
         }
+
+
+        @media (max-width: 800px) {
+          .modal {
+            max-width: 90vw;
+          }
+        }
         `
       }</style>
     </>
