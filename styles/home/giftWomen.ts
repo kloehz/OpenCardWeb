@@ -5,7 +5,6 @@ export const styles = css `
     .div-container {
         display: flex;
         justify-content: center;
-        width: 100vw;
         margin-top: 30px;
     }
 
