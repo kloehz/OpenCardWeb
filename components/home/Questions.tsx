@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { useAnswer } from '../../hooks/useAnswer';
 import { styles } from '../../styles/home/questions';
+import { IAnswer } from '../../types/answer';
 import { AnswersModal } from './answers/AnswersModal';
 
 export const Questions = () => {
 
   const [modalOpen, setModalOpen] = useState(false);
-  const [answer, setAnswer] = useState('');
+  const [answer, setAnswer] = useState({} as IAnswer);
 
   const handleModal = (id: number) => {
     setAnswer(useAnswer(id));
@@ -46,8 +47,8 @@ export const Questions = () => {
             </div>
           </div>
         </div>
+        <AnswersModal isOpen={modalOpen} setIsOpen={setModalOpen} answer={answer}/>
       </div>
-      <AnswersModal isOpen={modalOpen} setIsOpen={setModalOpen} answer={answer}/>
       <style jsx>{styles}</style>   
     </>
   );

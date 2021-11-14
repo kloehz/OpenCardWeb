@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nextui-org/react": "^1.0.1-alpha.50",
     "install": "^0.13.0",
     "leaflet": "^1.7.1",
     "next": "11.1.2",
