@@ -44,6 +44,8 @@ export const styles = css`
         .image-next {
             height: 80px;
             width: 80px;
+            filter: unset;
+            opacity: 1;
         }
     }
 `;
