@@ -13,7 +13,7 @@ const styles = css`
     justify-content: space-evenly;
     position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 1;
   }
 
   .imageLogo {
