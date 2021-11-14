@@ -1,6 +1,18 @@
+import { useState } from 'react';
+import { useAnswer } from '../../hooks/useAnswer';
 import { styles } from '../../styles/home/questions';
+import { AnswersModal } from './answers/AnswersModal';
 
 export const Questions = () => {
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [answer, setAnswer] = useState('');
+
+  const handleModal = (id: number) => {
+    setAnswer(useAnswer(id));
+    setModalOpen((state) => !state);
+  };
+
   return (
     <>
       <div className='div-container'>
@@ -9,25 +21,25 @@ export const Questions = () => {
           <h2 className='frequent-questions'>Conoce las preguntas<br/>frecuentes</h2>
         </div>
         <div className='questions'>
-          <div className='question-container'>
+          <div className='question-container' onClick={() => handleModal(0) }>
             <h5>¿Cuanto dinero puedo solicitar?</h5>
             <div style={{width: '20px'}}>
               <img className='arrow-img' src='/images/home/arrow.svg'/>
             </div>
           </div>
-          <div className='question-container'>
+          <div className='question-container' onClick={() => handleModal(1)}>
             <h5>¿Cuanto tengo que pagar por cuota?</h5>
             <div style={{width: '20px'}}>
               <img className='arrow-img' src='/images/home/arrow.svg'/>
             </div>
           </div>
-          <div className='question-container'>
+          <div className='question-container' onClick={() => handleModal(2)}>
             <h5>¿Como pago el prestamo?</h5>
             <div style={{width: '20px'}}>
               <img className='arrow-img' src='/images/home/arrow.svg'/>
             </div>
           </div>
-          <div className='question-container'>
+          <div className='question-container' onClick={() => handleModal(3)}>
             <h5>¿Que pasa si no termino el proceso?</h5>
             <div style={{width: '20px'}}>
               <img className='arrow-img' src='/images/home/arrow.svg'/>
@@ -35,6 +47,7 @@ export const Questions = () => {
           </div>
         </div>
       </div>
+      <AnswersModal isOpen={modalOpen} setIsOpen={setModalOpen} answer={answer}/>
       <style jsx>{styles}</style>   
     </>
   );
