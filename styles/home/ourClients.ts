@@ -6,14 +6,12 @@ export const styles = css`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100vw;
     }
 
     .images-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 0 2.5%;
     }
 
 

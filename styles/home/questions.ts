@@ -4,7 +4,6 @@ import { colors } from '../theme';
 export const styles = css`
     .div-container {
         height: fit-content;
-        width: 100vw;
         background-color: ${colors.primary};
         display: flex;
         padding: 8vh 0;
