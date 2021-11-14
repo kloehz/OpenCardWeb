@@ -54,6 +54,7 @@ export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: 
 
         .modal {
           background-color: white;
+          padding-bottom: 15px;
           min-width: 220px;
           max-width: 600px;
           max-height: 400px;
@@ -82,7 +83,6 @@ export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: 
         h5 {
           height: 75%;
           width: 100%;
-          padding: 20px;
           text-align: center;
         }
         `
