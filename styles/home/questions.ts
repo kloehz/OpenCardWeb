@@ -4,7 +4,7 @@ import { colors } from '../theme';
 export const styles = css`
     .div-container {
         height: fit-content;
-        background-color: ${colors.primary};
+        background-color: ${colors.tertiary};
         display: flex;
         padding: 8vh 0;
     }
@@ -18,7 +18,6 @@ export const styles = css`
     }
     
     .have-doubts {
-        color: ${colors.secondary};
         font-weight: 600;
         font-size: 1.8rem;
     }

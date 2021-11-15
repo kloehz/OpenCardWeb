@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { Footer } from '../footer/Footer';
 import NavBar from '../navbar/NavBar';
 
 interface ILayoutProps {
@@ -13,6 +14,7 @@ export const Layout = ({ children }: ILayoutProps) => {
       <div style={{marginTop: '90px'}}>
         { children }
       </div>
+      <Footer />
     </>
   );
 };

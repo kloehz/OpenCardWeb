@@ -7,14 +7,14 @@ export const OurClients = () => {
 
   const images = [];
 
-  for(let i = 1; i<=28; i++){
+  for(let i = 1; i<=8; i++){
     images.push(`/images/our_clients/${i}.jpeg`);
   }
 
   return (
     <>
       <div className="div-container">
-        <h2 style={{textAlign: 'center', marginBottom: '0'}}>Nuestros clientes</h2>
+        <h1 style={{textAlign: 'center', marginBottom: '0'}}>Nuestros clientes</h1>
         <h5>Ellos confian en nosotros</h5>
         <div className="images-container">
           {

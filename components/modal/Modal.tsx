@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from 'react';
-import { colors } from '../../../styles/theme';
-import { IAnswer } from '../../../types/answer';
+import { colors } from '../../styles/theme';
+import { IAnswer } from '../../types/answer';
 
 interface IAnswersModal {
   isOpen: boolean
@@ -8,7 +8,7 @@ interface IAnswersModal {
   answer: IAnswer
 }
 
-export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: IAnswersModal) => {
+export const Modal = ({ isOpen, setIsOpen, answer: { title, content } }: IAnswersModal) => {
   
   const handleClickBackground = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.preventDefault();

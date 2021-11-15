@@ -24,7 +24,10 @@ const MapAndContact = () => {
               height={50}
               width={50}
             />
-            <h3>Pueyrredon 844, Pergamino, Bs As</h3>
+            <div>
+              <h3>2477344507</h3>
+              <h3>2477344511</h3>
+            </div>
           </figure>
           <figure>
             <Image
@@ -40,7 +43,10 @@ const MapAndContact = () => {
               height={50}
               width={50}
             />
-            <h3>NRO WHATSAPP</h3>
+            <div>
+              <h3>opencardper@hotmail.com</h3>
+              <h3>mutual-elalba@hotmail.com</h3>
+            </div>
           </figure>
         </div>
       </section>

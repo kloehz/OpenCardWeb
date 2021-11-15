@@ -10,7 +10,6 @@ export const GiftWomen = () => {
             src='/images/home/women-svg.svg'
             width={500}
             height={500}
-            layout="responsive"
           />
         </div>
         <div className='credit-card'>

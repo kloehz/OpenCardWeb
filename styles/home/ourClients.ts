@@ -12,6 +12,7 @@ export const styles = css`
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        max-width: 35%;
     }
 
 
@@ -39,6 +40,12 @@ export const styles = css`
     }
 
     @media (max-width: 800px) {
+
+        .images-container {
+
+            max-width: unset;
+        }
+
         .image-next {
             height: 80px;
             width: 80px;
