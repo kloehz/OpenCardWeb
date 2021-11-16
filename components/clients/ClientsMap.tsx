@@ -2,7 +2,7 @@ import { styles } from '../../styles/clients/clients-map';
 import Map from '../map';
 import { cords } from '../map/cords';
 
-export const ClientsMap = () => {
+const ClientsMap = () => {
   return (
     <>
       <section>
@@ -15,3 +15,5 @@ export const ClientsMap = () => {
     </>
   );
 };
+
+export default ClientsMap;
