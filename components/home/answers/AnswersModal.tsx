@@ -5,10 +5,10 @@ import { IAnswer } from '../../../types/answer';
 interface IAnswersModal {
   isOpen: boolean
   setIsOpen: Dispatch<SetStateAction<boolean>>
-  answer: IAnswer
+  data: IAnswer
 }
 
-export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: IAnswersModal) => {
+export const AnswersModal = ({ isOpen, setIsOpen, data: { title, content } }: IAnswersModal) => {
   
   const handleClickBackground = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.preventDefault();

@@ -47,7 +47,7 @@ export const Questions = () => {
             </div>
           </div>
         </div>
-        <AnswersModal isOpen={modalOpen} setIsOpen={setModalOpen} answer={answer}/>
+        <AnswersModal isOpen={modalOpen} setIsOpen={setModalOpen} data={answer}/>
       </div>
       <style jsx>{styles}</style>   
     </>
