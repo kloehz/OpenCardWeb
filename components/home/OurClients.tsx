@@ -3,6 +3,7 @@ import { styles } from '../../styles/home/ourClients';
 import Image from 'next/image';
 import { Divider } from '../Divider';
 import Carousel from 'react-multi-carousel';
+import { shops } from '../../constants/shops';
 
 const responsive = {
   desktop: {
@@ -19,17 +20,17 @@ const responsive = {
   }
 };
 
+const images: string[] = [];
+
+shops.forEach((item) => {
+  images.push(`/images/our_clients/${item.id}.jpeg`);
+});
+
 export const OurClients = ({ deviceType }: any) => {
-
-  const images = [];
-
-  for(let i = 1; i<=8; i++){
-    images.push(`/images/our_clients/${i}.jpeg`);
-  }
 
   return (
     <>
-      <div>
+      <div className="our-clients-container">
         <h1 style={{textAlign: 'center', marginBottom: '0'}}>Nuestros clientes</h1>
         <h5 style={{textAlign: 'center'}}>Ellos confian en nosotros</h5>
         <Carousel

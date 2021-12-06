@@ -6,6 +6,7 @@ export const styles = css`
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 30px 0;
+    cursor: pointer;
   }
 
   .image-next:hover {
@@ -20,5 +21,12 @@ export const styles = css`
     height: 100px;
     width: 100px;
     transition: box-shadow .3s;
+  }
+
+  .children-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: certer;
   }
 `;

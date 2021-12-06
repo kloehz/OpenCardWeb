@@ -17,6 +17,7 @@ export const styles = css`
   }
 
   h5 {
+    font-weight: normal;
     cursor: default;
   }
 

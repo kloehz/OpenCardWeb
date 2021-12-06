@@ -37,14 +37,14 @@ const NavBar = () => {
         <Link href="/">
           <a className='link' onClick={() => setisOpen((open)=> !open)}>Inicio</a>
         </Link>
-        <Link href="/clients">
-          <a className='link'onClick={() => setisOpen((open)=> !open)} >Empresas</a>
-        </Link>
         <Link href="/about-us">
           <a className='link' onClick={() => setisOpen((open)=> !open)} >Nosotros</a>
         </Link>
         <Link href="/contact">
           <a className='link'onClick={() => setisOpen((open)=> !open)} >Contacto</a>
+        </Link>
+        <Link href="/commerces">
+          <a className='link'onClick={() => setisOpen((open)=> !open)} >Comercios</a>
         </Link>
       </div>
 

@@ -7,6 +7,7 @@ export const styles = css`
         background-color: ${colors.tertiary};
         display: flex;
         padding: 8vh 0;
+        justify-content: center;
     }
 
     .titles-container {
@@ -14,12 +15,15 @@ export const styles = css`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 50vw;
+        width: 40vw;
     }
     
     .have-doubts {
-        font-weight: 600;
+        font-weight: 300;
         font-size: 1.8rem;
+        width: 100%;
+        margin-left: 50px;
+        margin-bottom: 0;
     }
     
     .frequent-questions {
@@ -33,19 +37,21 @@ export const styles = css`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 50vw;
+        width: 40vw;
     }
 
     .questions h5 {
         margin: 0;
         width: 300px;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        font-weight: 500;
     }
 
     .question-container {
         display: flex;
         align-items: center;
         cursor: pointer;
+        margin: 5px 0;
     }
 
     .question-container h5 {
@@ -61,6 +67,13 @@ export const styles = css`
     .question-container:hover .arrow-img {
         margin-left: 5px;
         transition: .5s;
+    }
+
+    .childrenContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     @media (max-width: 800px) {
@@ -79,6 +92,11 @@ export const styles = css`
 
         .questions {
             width: unset;
+        }
+
+        .have-doubts {
+            width: unset;
+            margin: unset;
         }
     }
 `;

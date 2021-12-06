@@ -9,6 +9,10 @@ export const styles = css`
         max-width: 35%;
     }
 
+    .our-clients-container{
+        margin-bottom: 50px;
+    }
+
 
     .image-next {
         opacity: 0.8;

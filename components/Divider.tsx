@@ -15,7 +15,7 @@ export const Divider = ({marginSide}: IMarginSide) => {
             .divider {
                 width: 50%;
                 padding: 7px;
-                background: ${colors.secondary};
+                background: ${colors.tertiary};
                 margin-${marginSide}: auto;
             }
           `
