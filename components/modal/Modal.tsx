@@ -1,6 +1,5 @@
 import { Dispatch, SetStateAction } from 'react';
 import { colors } from '../../styles/theme';
-import { IAnswer } from '../../types/answer';
 
 interface IAnswersModal {
   isOpen: boolean
