@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useAnswer } from '../../hooks/useAnswer';
 import { styles } from '../../styles/home/questions';
-import { AnswersModal } from './answers/AnswersModal';
+import { AnswersModal } from '../modals/AnswersModal';
 
 export const Questions = () => {
 

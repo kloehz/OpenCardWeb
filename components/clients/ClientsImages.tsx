@@ -4,7 +4,7 @@ import { shares } from '../../constants/shares';
 import { shops } from '../../constants/shops';
 import { styles } from '../../styles/clients/clients-images';
 import { IImage } from '../../types/shops';
-import { AnswersModal } from '../home/answers/AnswersModal';
+import { AnswersModal } from '../modals/AnswersModal';
 
 export const ClientsImages = () => {
 
