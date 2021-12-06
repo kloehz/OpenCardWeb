@@ -6,6 +6,9 @@ import { Divider } from '../Divider';
 export const Presentation = () => {
   return (
     <>
+      <div className="title-container">
+        <h1 style={{textAlign: 'right'}}>Cambia tu forma<br/>de Comprar</h1>
+      </div>
       <div className="image-open-card">
         <Image
           src="/images/home/png.png"

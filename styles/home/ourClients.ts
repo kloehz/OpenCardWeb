@@ -1,12 +1,6 @@
 import css from 'styled-jsx/css';
 
 export const styles = css`
-    .div-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .images-container {
         display: flex;
@@ -15,15 +9,20 @@ export const styles = css`
         max-width: 35%;
     }
 
+    .our-clients-container{
+        margin-bottom: 50px;
+    }
+
 
     .image-next {
         opacity: 0.8;
         margin: 10px;
         border-radius: 10px;
         overflow: hidden;
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
         transition: box-shadow .3s;
+        cursor: pointer;
     }
 
     .image-next:hover {

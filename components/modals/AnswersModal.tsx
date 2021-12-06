@@ -1,20 +1,19 @@
 import { Dispatch, SetStateAction } from 'react';
-import { colors } from '../../../styles/theme';
-import { IAnswer } from '../../../types/answer';
+import { colors } from '../../styles/theme';
 
 interface IAnswersModal {
   isOpen: boolean
   setIsOpen: Dispatch<SetStateAction<boolean>>
-  answer: IAnswer
+  children: JSX.Element
 }
 
-export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: IAnswersModal) => {
+export const AnswersModal = ({ isOpen, setIsOpen, children }: IAnswersModal) => {
   
   const handleClickBackground = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.preventDefault();
-    if (e.currentTarget.dataset.js === 'root-modal') {
-      setIsOpen(false);
-    }
+    // if (e.currentTarget.dataset.js === 'root-modal') {
+    //   setIsOpen(false);
+    // }
   };
 
   return (
@@ -26,8 +25,7 @@ export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: 
       >
         <div className="modal">
           <span onClick={ () => setIsOpen(false) }>X</span>
-          <h1>{title}</h1>
-          <h5>{content}</h5>
+          { children }
         </div>
       </div>
       <style jsx>{`
