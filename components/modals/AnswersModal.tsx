@@ -1,19 +1,19 @@
 import { Dispatch, SetStateAction } from 'react';
-import { IAnswer } from '../../../types/answer';
+import { colors } from '../../styles/theme';
 
 interface IAnswersModal {
   isOpen: boolean
   setIsOpen: Dispatch<SetStateAction<boolean>>
-  answer: IAnswer
+  children: JSX.Element
 }
 
-export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: IAnswersModal) => {
+export const AnswersModal = ({ isOpen, setIsOpen, children }: IAnswersModal) => {
   
   const handleClickBackground = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.preventDefault();
-    if (e.currentTarget.dataset.js === 'root-modal') {
-      setIsOpen(false);
-    }
+    // if (e.currentTarget.dataset.js === 'root-modal') {
+    //   setIsOpen(false);
+    // }
   };
 
   return (
@@ -25,8 +25,7 @@ export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: 
       >
         <div className="modal">
           <span onClick={ () => setIsOpen(false) }>X</span>
-          <h1>{title}</h1>
-          <h5>{content}</h5>
+          { children }
         </div>
       </div>
       <style jsx>{`
@@ -53,7 +52,7 @@ export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: 
         }
 
         .modal {
-          background-color: white;
+          background-color: ${colors.tertiary};
           padding-bottom: 15px;
           min-width: 220px;
           max-width: 600px;
@@ -61,6 +60,13 @@ export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: 
           display: flex;
           flex-direction: column;
           border-radius: 25px;
+          animation: up_to_mid .5s;
+        }
+
+        @keyframes up_to_mid {
+          0% { margin-top: 100%}
+          50%; { margin-top: 50%;}
+          100% { margin-top: 0;}
         }
 
         span {
@@ -71,6 +77,7 @@ export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: 
           top: 0;
           margin-right: 15px;
           cursor: pointer;
+          color: ${colors.quaternary}
         }
 
         h1 {
@@ -84,6 +91,14 @@ export const AnswersModal = ({ isOpen, setIsOpen, answer: { title, content } }: 
           height: 75%;
           width: 100%;
           text-align: center;
+          color: #3E3F3D;
+        }
+
+
+        @media (max-width: 800px) {
+          .modal {
+            max-width: 90vw;
+          }
         }
         `
       }</style>

@@ -1,7 +1,7 @@
 import css from 'styled-jsx/css';
 import { colors } from './theme';
 
-const styles = css`
+export const styles = css`
   .navbar-container {
     align-items: center;
     background-color: ${colors.primary};
@@ -125,5 +125,3 @@ const styles = css`
     }
   }
 `;
-
-export default styles;

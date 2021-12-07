@@ -24,18 +24,13 @@ export const styles = css `
         font-weight: 300;
         width: 100%;
         margin: 0 0 0 10%;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .buy-with-card {
-        margin: 0;
-        font-size: 1.5rem;
-    }
-
-    .buy-it {
-        margin: 0;
-        font-size: 1.5rem;
         text-align: center;
+        margin: 20px;
+        font-size: 1.5rem;
     }
 
     .image-container {
@@ -56,10 +51,6 @@ export const styles = css `
             font-size: .8rem !important;
         }
 
-        .buy-it {
-            font-size: .8rem !important;
-        }
-
         .credit-card {
             margin-left: -120px !important;
         }
@@ -77,15 +68,12 @@ export const styles = css `
         }
 
         .buy-with-card {
+            margin: 10px;
             text-align: center;
             font-size: 1rem;
         }
 
         .title {
-            font-size: 1rem;
-        }
-
-        .buy-it {
             font-size: 1rem;
         }
     }

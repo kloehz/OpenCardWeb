@@ -3,11 +3,10 @@ import { colors } from '../theme';
 
 export const styles = css`
   section {
-    width: 100vw;
-    padding: 0 5vw;
     height: fit-content;
     display: flex;
     justify-content: center;
+    padding: 0 10px;
   }
 
   .map-container {
@@ -21,12 +20,15 @@ export const styles = css`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center:
-    width: 100%;
+    align-items: center;
+    padding-left: 10px;
   }
 
   figure {
     display: flex;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
   }
 
   figure h3 {
@@ -39,7 +41,8 @@ export const styles = css`
     }
 
     .map-container {
-      max-width: 90vw; 
+      max-width: 90vw;
+      margin: 0 auto;
     }
   }
 `;

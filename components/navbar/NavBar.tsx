@@ -1,4 +1,4 @@
-import testStyle from '../../styles/navBarStyles';
+import { styles } from '../../styles/navBarStyles';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -26,19 +26,16 @@ const NavBar = () => {
       </div>
 
       <div className="menu-media" onClick={() => setisOpen((open) => !open)}>
-        <span className={isOpen === true ? 'close' : 'open'}></span>
-        <span className={isOpen === true ? 'close' : 'open'}></span>
-        <span className={isOpen === true ? 'close' : 'open'}></span>
+        <span className={isOpen ? 'close' : 'open'}></span>
+        <span className={isOpen ? 'close' : 'open'}></span>
+        <span className={isOpen ? 'close' : 'open'}></span>
       </div>
         
       <div className={
-        `link-container ${isOpen !== true ? 'show': ''}`
+        `link-container ${isOpen ? '' : 'show'}`
       }>
         <Link href="/">
           <a className='link' onClick={() => setisOpen((open)=> !open)}>Inicio</a>
-        </Link>
-        <Link href="/about-us">
-          <a className='link'onClick={() => setisOpen((open)=> !open)} >Empresas</a>
         </Link>
         <Link href="/about-us">
           <a className='link' onClick={() => setisOpen((open)=> !open)} >Nosotros</a>
@@ -46,14 +43,15 @@ const NavBar = () => {
         <Link href="/contact">
           <a className='link'onClick={() => setisOpen((open)=> !open)} >Contacto</a>
         </Link>
+        <Link href="/commerces">
+          <a className='link'onClick={() => setisOpen((open)=> !open)} >Comercios</a>
+        </Link>
       </div>
 
       <style jsx>
-        { testStyle }
+        { styles }
       </style>
     </div>
-        
-
   );
 
 };
