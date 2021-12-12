@@ -6,7 +6,7 @@ export const styles = css`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 20px 0 80px;
+    margin: 20px 0 40px;
   }
 
   h2 {

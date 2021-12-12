@@ -39,12 +39,12 @@ export const Questions = () => {
               <img className='arrow-img' src='/images/home/arrow.svg'/>
             </div>
           </div>
-          <div className='question-container' onClick={() => handleModal(3)}>
+          {/* <div className='question-container' onClick={() => handleModal(3)}>
             <h5>¿Que pasa si no termino el proceso?</h5>
             <div style={{width: '20px'}}>
               <img className='arrow-img' src='/images/home/arrow.svg'/>
             </div>
-          </div>
+          </div> */}
         </div>
         <AnswersModal isOpen={modalOpen} setIsOpen={setModalOpen}>
           <div className="childrenContainer">

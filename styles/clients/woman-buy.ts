@@ -2,10 +2,6 @@ import css from 'styled-jsx/css';
 import { colors } from '../theme';
 
 export const styles = css`
-  .image-container {
-    max-width: 35%;
-    min-width: 400px;
-  }
 
   h3 {
     text-align: center;

@@ -131,7 +131,7 @@ export const shops: IImage[] = [
   },
   {
     id: 'axion-irigoyen',
-    name: 'Servicentro Avenida',
+    name: 'Servicentro Avenida Axion',
     address: ['Irigoyen 205'],
     phone: '',
     sector: 'combustible', //normal-combustible-supermercado
@@ -148,7 +148,7 @@ export const shops: IImage[] = [
   {
     id: 'las-nereidas',
     name: 'Las nereidas',
-    address: ['Itala 536'],
+    address: ['Itala 536', 'Blvd. Rocha 574'],
     phone: '',
     sector: 'normal', //normal-combustible-supermercado
     hasPromo: false,
