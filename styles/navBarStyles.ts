@@ -23,6 +23,10 @@ export const styles = css`
     margin: 0px 5px 0px 10px
   }
 
+  .imageLogo:hover {
+    cursor: pointer;
+  }
+
   .menu-media {
     display: none;
     flex-direction: column;

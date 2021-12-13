@@ -131,8 +131,8 @@ export const shops: IImage[] = [
   },
   {
     id: 'axion-irigoyen',
-    name: 'Servicentro Avenida',
-    address: ['Irigoyen 205'],
+    name: 'Servicentro Avenida Axion',
+    address: ['Yrigoyen 205'],
     phone: '',
     sector: 'combustible', //normal-combustible-supermercado
     hasPromo: false,
@@ -148,7 +148,7 @@ export const shops: IImage[] = [
   {
     id: 'las-nereidas',
     name: 'Las nereidas',
-    address: ['Itala 536'],
+    address: ['Itala 536', 'Blvd. Rocha 574'],
     phone: '',
     sector: 'normal', //normal-combustible-supermercado
     hasPromo: false,
@@ -204,7 +204,7 @@ export const shops: IImage[] = [
   {
     id: 'sanifer',
     name: 'Sanifer',
-    address: ['Parque Belgrano - Irigoyen'],
+    address: ['Parque Belgrano - Yrigoyen'],
     phone: '',
     sector: 'normal', //normal-combustible-supermercado
     hasPromo: false,
@@ -239,6 +239,30 @@ export const shops: IImage[] = [
     address: ['San Nicolas 530'],
     phone: '',
     sector: 'normal', //normal-combustible-supermercado
+    hasPromo: false,
+  },
+  {
+    id: 'ferraris',
+    name: 'Corralon Ferraris',
+    address: ['Blvd. Drago 454'],
+    phone: '',
+    sector: 'normal', //normal-combustible-supermercado
+    hasPromo: false,
+  },
+  {
+    id: 'mayor',
+    name: 'Corralon Mayor',
+    address: ['Av. Jauregui 2270'],
+    phone: '',
+    sector: 'normal', //normal-combustible-supermercado
+    hasPromo: false,
+  },
+  {
+    id: 'tres-reyes',
+    name: 'Supermercado Tres Reyes',
+    address: ['Av Yrigoyen & Chile', 'Av. de Mayo 1188', 'Pasteur & Bv. Alsina'],
+    phone: '',
+    sector: 'supermercado', //normal-combustible-supermercado
     hasPromo: false,
   }
 ];

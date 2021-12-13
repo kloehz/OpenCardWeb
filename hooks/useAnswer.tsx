@@ -1,3 +1,4 @@
+import { HowToPay } from '../components/modalAnswers/HowToPay';
 import { InputModal } from '../components/modalAnswers/InputModal';
 import { SharesModal } from '../components/modalAnswers/SharesModal';
 
@@ -9,6 +10,6 @@ export const useAnswer = ( id: number ) => {
   case 1:
     return <SharesModal />;
   default:
-    return <>unknow option</>;
+    return <HowToPay />;
   }
 };

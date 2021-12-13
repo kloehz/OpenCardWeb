@@ -22,7 +22,7 @@ export const ClientsImages = () => {
         {
           shops.map((image, index) => {
             return (
-              <div key={index} className="image-next" onClick={(e) => handleModal(image)}>
+              <div key={index} className="image-next" onClick={() => handleModal(image)}>
                 <Image src={`/images/our_clients/${image.id}.jpeg`} key={index} height={100} width={100} />
               </div>
             );

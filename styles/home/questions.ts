@@ -6,7 +6,7 @@ export const styles = css`
         height: fit-content;
         background-color: ${colors.tertiary};
         display: flex;
-        padding: 8vh 0;
+        padding: 6vh 0;
         justify-content: center;
     }
 
