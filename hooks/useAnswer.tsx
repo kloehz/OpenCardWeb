@@ -1,4 +1,4 @@
-import { HowToPay } from '../components/modalAnswers/howToPay';
+import { HowToPay } from '../components/modalAnswers/HowToPay';
 import { InputModal } from '../components/modalAnswers/InputModal';
 import { SharesModal } from '../components/modalAnswers/SharesModal';
 
