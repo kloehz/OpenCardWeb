@@ -2,11 +2,9 @@ import css from 'styled-jsx/css';
 
 export const styles = css`
   section {
-    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    margin: 20px 0 40px;
   }
 
   h2 {

@@ -8,7 +8,7 @@ export const ContactUsImage = () => {
         <Image
           src='/images/contact-us/map-girl-location2.svg'
           height={600}
-          width={500}
+          width={1000}
         />
       </section>
       <style jsx>{styles}</style>

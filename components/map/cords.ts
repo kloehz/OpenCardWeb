@@ -42,4 +42,9 @@ export const cords = [
   {name: 'Siete 20', lat: -33.8960534, long: -60.5737943},
   {name: 'Vidaurreta', lat: -33.8961757, long: -60.573116},
   {name: 'Villa Indumentaria', lat: -33.8941307, long: -60.5729131},
+  {name: 'Ferraris', lat: -33.8870731, long: -60.5560876},
+  {name: 'Mayor', lat: -33.8873884, long: -60.5892406},
+  {name: 'Supermercado Tres Reyes', lat: -33.8908886, long: -60.5785796},
+  {name: 'Supermercado Tres Reyes', lat: -33.8969681, long: -60.5604743},
+  {name: 'Supermercado Tres Reyes', lat: -33.8894335, long: -60.5707936},
 ];

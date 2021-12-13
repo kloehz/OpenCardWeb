@@ -4,14 +4,11 @@ import { colors } from '../../styles/theme';
 export const OurEnterprise = () => {
   return (
     <>
-      <div className="our-enterprise">
-        <h2>NUESTRA EMPRESA</h2>
-      </div>
       <figure>
         <Image
-          src='/images/about-us/people.svg'
-          height={450}
-          width={600}
+          src='/images/about-us/people2.svg'
+          height={600}
+          width={1000}
         />
       </figure>
       <style jsx>{`

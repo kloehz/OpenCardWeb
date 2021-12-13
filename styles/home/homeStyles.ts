@@ -2,10 +2,9 @@ import css from 'styled-jsx/css';
 
 const styles = css`
     .image-open-card {
-        display: block;
-        margin: 0 auto 30px;
-        max-width: 47%;
-        min-width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .title-container {
